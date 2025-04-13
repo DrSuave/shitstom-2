@@ -1,0 +1,21 @@
+{
+  "main.css": "/static/css/main.19cc1e64.chunk.css",
+  "main.js": "/static/js/main.613a40be.chunk.js",
+  "main.js.map": "/static/js/main.613a40be.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
+  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
+  "static/js/2.86c5668f.chunk.js": "/static/js/2.86c5668f.chunk.js",
+  "static/js/2.86c5668f.chunk.js.map": "/static/js/2.86c5668f.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.028a46e6761f0cd9abb4afe6da75a01d.js": "/precache-manifest.028a46e6761f0cd9abb4afe6da75a01d.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.19cc1e64.chunk.css.map": "/static/css/main.19cc1e64.chunk.css.map",
+  "static/media/arrow.svg": "/static/media/arrow.7fc7e388.svg",
+  "static/media/style.css": "/static/media/thundernight.beed6ae3.jpg",
+  "static/media/downarrow.svg": "/static/media/downarrow.ddfcc2f9.svg",
+  "static/media/facebook.svg": "/static/media/facebook.16eefbc0.svg",
+  "static/media/leftarrow.svg": "/static/media/leftarrow.e8d634ba.svg",
+  "static/media/reddit.svg": "/static/media/reddit.474f08ce.svg",
+  "static/media/rightarrow.svg": "/static/media/rightarrow.c4fef3e8.svg",
+  "static/media/twitter.svg": "/static/media/twitter.424e91a6.svg"
+}
