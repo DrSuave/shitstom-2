@@ -8,7 +8,7 @@ export function onResponse() {
     //first we want to figure out when the sun rises today. To do that, we start by converting the date from seconds sinve 1970 to milliseconds since 1970
     let sunriseSinceEpoch = new Date(this.state.response.sys.sunrise * 1000);
     //then we convert that value to UTC time, first with the hour, then with the minute
-    let sunriseHour = sunriseSinceEpoch.getUTCHours() +1; //BST plus one
+    let sunriseHour = sunriseSinceEpoch.getUTCHours();
     let sunriseMinute = sunriseSinceEpoch.getUTCMinutes();
     //if the minute is less than 10, we stick a 0 in front of it
     sunriseMinute < 10 ? sunriseMinute = '0' + sunriseMinute : sunriseMinute = sunriseMinute;
@@ -16,7 +16,7 @@ export function onResponse() {
     let humanSunrise = sunriseHour + ':' + sunriseMinute + 'AM';
     //then we repeat the above, but with sunset
     let sunsetSinceEpoch = new Date(this.state.response.sys.sunset * 1000);
-    let sunsetHour = sunsetSinceEpoch.getUTCHours() +1; //BST plus one
+    let sunsetHour = sunsetSinceEpoch.getUTCHours();
     //we don't want a 24hr clock, so minusing 12 from the sunset hour
     sunsetHour = sunsetHour - 12;
     let sunsetMinute = sunsetSinceEpoch.getUTCMinutes();
@@ -63,15 +63,15 @@ export function onResponse() {
       //here we write our sweary messages based on the weather. The method is relatively crude, drawing the bulk of the info from the icon. Over time temperature and windspeed could finetune these messages.
 
       if (this.state.icon === '01d') {
-        if (this.state.temp < 15) {
-          this.setState({
-            message: 'Pretty, but disappointingly cold.',
-            subMessage: "Like you, except it's pretty."
-          })
-        } else {
+        if (this.state.temp > 15) {
           this.setState({
             message: 'Fucking Lush',
             subMessage: "If you had friends you could go outside and play!"
+          })
+        } else {
+          this.setState({
+            message: 'Pretty, but disappointingly cold.',
+            subMessage: "Like you, except it's pretty."
           })
         }
       }

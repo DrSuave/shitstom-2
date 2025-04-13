@@ -11,7 +11,7 @@ class Forecast extends React.Component {
                 let date = new Date(secondsSinceEpoch * 1000);
                 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                 let day = days[date.getUTCDay()];
-                let utcHour = date.getUTCHours() +1; //BST plus one
+                let utcHour = date.getUTCHours();
                 let hour = '000'
                 if (utcHour > 12) {
                      hour = utcHour - 12;
